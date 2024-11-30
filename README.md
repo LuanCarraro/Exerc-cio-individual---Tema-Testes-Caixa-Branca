@@ -1,9 +1,35 @@
-# Exercicio-individual---Tema-Testes-Caixa-Branca
+1. Grafo de Fluxos
+   ![_Fluxograma (4)](https://github.com/user-attachments/assets/35be2607-67d6-4a1b-ad33-d2a1a3c1bf3c)
 
-Ao longo deste código foram encontrados possiveis erros no código. São eles:
 
-1. Conexão não fechada - A conexão com o banco de dados é aberta na nona linha do código mas jamais é fechada. Este erro resulta em conexões desnecessárias abertas, o que pode levar a utiilização excessiva de memória e processamento. Além disso, caso o número de conexões abertas exceder o suportado pelo banco de dados, o acesso ao banco será impossibilitado.
-2. Tratamento incompleto de erros - No bloco "catch (Exception e) { }", tanto na linha 15 quanto na linha 32, o erro é "pego" pelo código, mas nada é feito com ele. O possivel erro não é tratado dentro do bloco e, além disso, também não é exibida nenhuma mensagem explicitando o erro, dificultando sua identificação e correção.
-3. Injeção SQL - Na linhas 24 e 25, login e senha são inseridos diretamente na querySQL, abrindo espaço para que um usuário mal intencionado insira comandos SQL arbitrários e tenha acesso à dados sigilosos.
-4. Credenciais expostas - Na linha 13, as credenciais "user" e "password", utilizadas para acessar o banco de dados, estão expostas diretamente no código, possibilitando que qualquer um que tenha acesso ao código também tenha acesso às credenciais. Desta forma, possíveis invasores teriam o acesso à essas informações facilitado.
-5. Não validação de variáveis - As váriaveis "login" e "senha" não são validadas em nenhum momento. Assim, valores inválidos, como "null" , poderiam gerar erros ou comportamento imprevisível. 
+2. Complexidade Ciclomática
+   
+   A complexidade ciclomática é calculada a partir da fórmula M = E - N + 2P, sendo:
+
+   E = Número de Arestas;
+   
+   N = Número de Nós;
+   
+   P = Número de componentes conectados;
+   
+   M = Complexidade Ciclomática;
+   
+
+
+   No grafo de fluxo acima:
+   
+   E = 10;
+   
+   N = 10;
+   
+   P = 1;
+   
+   M = 2;
+   
+
+
+4. Caminhos Básicos
+ 
+    Caminho 1 (Verdadeiro) - Nó 1; Nó 2; Nó 3; Nó 4; Nó 5; Nó 6; Nó 8; Nó 9; Nó 10
+
+    Caminho 2 (Falso) - Nó 1; Nó 2; Nó 3; Nó 4; Nó 5; Nó 7; Nó 9; Nó 10
