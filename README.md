@@ -25,6 +25,8 @@
    P = 1;
    
    M = 2;
+
+   Sendo assim, a complexidade ciclomática deste algoritmo é 2.
    
 
 
