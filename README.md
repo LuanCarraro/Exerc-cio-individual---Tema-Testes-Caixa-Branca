@@ -1,4 +1,4 @@
-# Exercicio-individual---Tema-Testes-Caixa-Branca
+# Exercicio-individual - Testes-Caixa-Branca
 
 Ao longo deste código foram encontrados possiveis erros no código. São eles:
 
